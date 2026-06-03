@@ -1,10 +1,17 @@
 import React from "react";
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
+import { assets } from "../assets/assets";
 const Card = ({ car }) => {
 	const currency = import.meta.env.VITE_CURRENCY;
 	const navigate = useNavigate();
 	return (
-		<div className="group rounded-xl overflow-hidden shadow-lg hover:translate-y-1 transition-all duration-500 cursor-pointer" onClick={()=>{navigate(`/car-details/${car._id}`) ; scrollTo(0,0)}}>
+		<div
+			className="group rounded-xl overflow-hidden shadow-lg hover:translate-y-1 transition-all duration-500 cursor-pointer"
+			onClick={() => {
+				navigate(`/car-details/${car._id}`);
+				scrollTo(0, 0);
+			}}
+		>
 			<div className="relative h-48 overflow-hidden">
 				<img
 					src={car.image}
@@ -40,7 +47,7 @@ const Card = ({ car }) => {
 				<div className="mt-4 grid grid-cols-2 gap-y-2 text-gray-600">
 					<div className="flex items-center text-sm text-muted-foreground ">
 						<img
-							src="/src/assets/users_icon.svg"
+							src={assets.users_icon}
 							alt="icon"
 							className="h-4 mr-2"
 						/>
@@ -48,7 +55,7 @@ const Card = ({ car }) => {
 					</div>
 					<div className="flex items-center text-sm text-muted-foreground ">
 						<img
-							src="/src/assets/fuel_icon.svg"
+							src={assets.fuel_icon}
 							alt="icon"
 							className="h-4 mr-2"
 						/>
@@ -56,7 +63,7 @@ const Card = ({ car }) => {
 					</div>
 					<div className="flex items-center text-sm text-muted-foreground ">
 						<img
-							src="/src/assets/car_icon.svg"
+							src={assets.car_icon}
 							alt="icon"
 							className="h-4 mr-2"
 						/>
@@ -64,7 +71,7 @@ const Card = ({ car }) => {
 					</div>
 					<div className="flex items-center text-sm text-muted-foreground ">
 						<img
-							src="/src/assets/location_icon.svg"
+							src={assets.location_icon}
 							alt="icon"
 							className="h-4 mr-2"
 						/>
