@@ -21,22 +21,22 @@ const Dashboard = () => {
 		{
 			title: "Total Cars",
 			value: data.totalCars,
-			icon: "/src/assets/carIconColored.svg",
+			icon: assets.carIconColored
 		},
 		{
 			title: "Total Bookings",
 			value: data.totalBookings,
-			icon: "/src/assets/listIconColored.svg",
+			icon: assets.listIconColored,
 		},
 		{
 			title: "Pending Bookings",
 			value: data.pendingBookings,
-			icon: "/src/assets/cautionIconColored.svg",
+			icon: assets.cautionIconColored,
 		},
 		{
 			title: "Completed Bookings",
 			value: data.completedBookings,
-			icon: "/src/assets/listIconColored.svg",
+			icon: assets.listIconColored,
 		},
 	];
 
