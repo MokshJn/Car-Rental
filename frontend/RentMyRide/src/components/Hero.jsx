@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { cityList } from "../assets/assets";
+import { cityList ,  } from "../assets/assets";
 import Card from "./Card";
 import { useAppContext } from "../context/Appcontext";
 import { motion } from "framer-motion";

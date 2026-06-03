@@ -34,7 +34,7 @@ const Navbar = () => {
 				<motion.img
 					whileHover={{ scale: 1.05 }}
 					whileTap={{ scale: 0.9 }}
-					src="./src/assets/logo.svg"
+					src={assets.logo}
 					alt="logo"
 					className="h-8"
 				/>
@@ -52,7 +52,7 @@ const Navbar = () => {
 						className="py-1.5 w-full bg-transparent outline-none placeholder-gray-500"
 						placeholder="Search Product "
 					/>
-					<img src="/src/assets/search_icon.svg" alt="search" />
+					<img src={assets.search_icon} alt="search" />
 				</div>
 
 				<div className="flex max-sm:flex-col items-start sm:items-center gap-6">
