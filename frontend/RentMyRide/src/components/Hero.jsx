@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { cityList ,  } from "../assets/assets";
+import { cityList } from "../assets/assets";
+import { assets } from "../assets/assets";
 import Card from "./Card";
 import { useAppContext } from "../context/Appcontext";
 import { motion } from "framer-motion";
@@ -84,7 +85,7 @@ const Hero = () => {
 				className="flex items-center justify-center gap-6  px-6 py-3 max-sm:mt-4 bg-primary hover:bg-primary-dull text-white rounded-full cursor-pointer">
 					Search
 					<img
-						src="/src/assets/search_icon.svg"
+						src={assets.search_icon}
 						alt="search"
 						className="brightness-300"
 					/>
@@ -95,7 +96,7 @@ const Hero = () => {
 				initial={{y:100 , opacity:0}}
 				animate={{y:0 , opacity:1}}
 				transition={{duration:0.8 , delay:0.6}}
-				src={"/src/assets/main_car.png"}
+				src={assets.main_car}
 				alt="car"
 				className="max-h-74"
 			/>

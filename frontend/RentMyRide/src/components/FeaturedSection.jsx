@@ -2,6 +2,7 @@ import { useState , useEffect} from "react";
 import Title from "./Title";
 import Card from "./Card";
 import { useAppContext } from "../context/Appcontext";
+import { assets } from "../assets/assets";
 import { toast } from "react-hot-toast";
 import {motion} from "framer-motion"; 
 
@@ -72,7 +73,7 @@ const FeaturedSection = () => {
 				}}
 				className="flex items-center justify-center gap-2 px-6 py-2 border border-borderColor hover:bg-gray-50 rounded-md mt-18 cursor-pointer"
 			>
-				Explore all cars <img src="/src/assets/arrow_icon.svg" />
+				Explore all cars <img src={assets.arrow_icon} />
 			</motion.button>
 		</motion.div>
 	);

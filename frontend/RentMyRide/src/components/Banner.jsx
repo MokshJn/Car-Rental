@@ -1,5 +1,6 @@
 import React from 'react'
 import {motion} from 'framer-motion' ; 
+import { assets } from "../assets/assets";
 const Banner = () => {
   return (
     <motion.div 
@@ -20,7 +21,7 @@ const Banner = () => {
         initial={{opacity:0 , x:100}}
         whileInView={{opacity:1 , x:0}}
         transition={{duration:0.6 , delay:0.4}}
-        src="/src/assets/banner_car_image.png" alt="car" className='max-h-45 mt-10'/>
+        src={assets.banner_car_image} alt="car" className='max-h-45 mt-10'/>
     </motion.div>
   )
 }
