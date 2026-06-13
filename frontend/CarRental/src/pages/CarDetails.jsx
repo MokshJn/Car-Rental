@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { assets, dummyCarData } from "../assets/assets";
+import { assets } from "../assets/assets";
 import Loader from "../components/Loader";
 import { useAppContext } from "../context/Appcontext";
 import { toast } from "react-hot-toast";
